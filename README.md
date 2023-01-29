@@ -1,12 +1,12 @@
-<h1 align="center" style="color: yellow">WATCH ME</h1>
+<h1 align="center" style="color: #FFD700">WATCH ME</h1>
 
 # Introdução
 
 [WatchMe](https://github.com/marciovz/ignite-reacjs-desafio2) é um site de lista de sugestões de filmes selecionados por categorias.
 
-Este projeto é uma implementação do desafio 2 sobre conceitos de componentização da trilha ReactJs-2021 do curso Ignite da Rocketseat.
+Este projeto é uma implementação do desafio 2 da trilha Ignite ReactJs versão 2021 do curso Ignite da Rocketseat para aplicação dos conhecimentos sobre conceitos de componentização.
 
-<div align="center" background="#ffffff">
+<div align="center">
   <img src="https://raw.githubusercontent.com/marciovz/ignite-reacjs-desafio2/main/assets/watchme-action.png" width="600" alt="Watch Me" />
 </div>
 
@@ -54,8 +54,8 @@ Abra o terminal na pasta rais do projeto e rode o comando para instalação dos 
 
 Abra um navegador e digite o endereço localhost:8080
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px">
-    <img src="https://raw.githubusercontent.com/marciovz/ignite-reacjs-desafio2/main/assets/watchme-action.png" width="300" alt="Watch Me section Action" />
+<div align="center" >
+    <img src="https://raw.githubusercontent.com/marciovz/ignite-reacjs-desafio2/main/assets/watchme-action.png" width="300" alt="Watch Me section Action" style="margin-right: 30px" />
     <img display="inline" src="https://raw.githubusercontent.com/marciovz/ignite-reacjs-desafio2/main/assets/watchme-family.png" width="300" alt="Watch Me section family" />
 </div>
 
