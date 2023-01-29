@@ -1,30 +1,15 @@
-import { useEffect, useState, memo } from 'react';
-
+import { GenreProps } from '../App'
 import { Button } from './Button';
-import { api } from '../services/api';
 
 import '../styles/sidebar.scss';
 
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
-
 interface SideBarProps {
   selectedGenreId: number,
-  onChangeGenre: Function
+  genres: GenreProps[],
+  onChangeGenre: (id: number) => void,
 }
 
-function SideBarComponent({onChangeGenre, selectedGenreId=1 }: SideBarProps) {
-  const [genres, setGenres] = useState<GenreResponseProps[]>([]);
-
-  useEffect(() => {
-    api.get<GenreResponseProps[]>('genres').then(response => {
-      setGenres(response.data);
-    });
-  }, []);
-
+export function SideBar({ selectedGenreId, genres, onChangeGenre  }: SideBarProps) {
   return (
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
@@ -44,7 +29,3 @@ function SideBarComponent({onChangeGenre, selectedGenreId=1 }: SideBarProps) {
     </nav>
   )  
 }
-
-export const SideBar = memo(SideBarComponent, (prevProps, nextProps) => {
-  return Object.is(prevProps.selectedGenreId, nextProps.selectedGenreId);
-});
